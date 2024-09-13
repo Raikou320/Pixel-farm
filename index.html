@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La petite ferme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="gauche">
+        <h2>Pour récolter les cultures plantées veuillez
+        <br>cliquer sur le lopin de terre ou les plantes poussent.<br>Et pour le lait veulliez cliquer sur la vache</h2>
+        <p><img src="piece.png" class='image-piece'>:<span class="pieces">0</span></p>
+        <p><img src="carotte.png" class='image-carotte'>:<span class="carottes">0</span></p>
+        <p><img src="ble.png" class='image-ble'>:<span class="ble">0</span></p>
+        <p><img src="lait.png" class='image-lait'>:<span class="lait">0</span></p>
+        <p><img src="pateDeLapin.png" class="image-pateLapin">:<span class="pateLapin">0</span></p>
+        <p><img src="bacon.png" class="image-bacon">:<span class="bacon">0</span></p>
+        <p><img src="farine.png" class="image-farine">:<span class="farines">0</span></p>
+        <p><img src="graine.png" class="image-graine">:<span class="graines">10</span></p>
+        <p><img src="oeuf.png" class="image-oeuf">:<span class="oeufs">0</span></p>
+        <img src="terre.png" class="plant-carotte"><h6><span class="timer-carotte">30</span>s</h6>
+        <button onclick="planterCarottes()">Planter une<br>carotte</button>
+        <br><button onclick="vendreCarottes()">Vendre une carotte</button>
+        <button><details>Pour 5 pièces unité<summary>Détails de la vente:
+        </summary></details></button>
+        <br><img src="graine.png" class="graine">
+        <button onclick="acheterGraine()">Acheter une graine pour une pièce</button>
+        <br><img src="terre.png" class="plant-ble"><h6><span class="timer-ble">15</span>s</h6>
+        <button onclick="planterBle()">Planter du<br>blé pour une graine</button>
+        <br><button onclick="vendreBle()">Vendre 1 de blé</button>
+        <button><details>
+        <summary>Détails de la vente:</summary>3 pièces unité</details></button>
+        <br><img src="vache.png" class="vache"><h6><span class="timer-vache">45</span>s</h6>
+        <button onclick="nourirVache()">Nourir la vache pour 2 blé</button>
+        <br><button onclick="vendreLait()">Vendre le lait</button>
+        <button><details>12 pièces unité<summary>Détails de la vente:
+        </summary></details></button>
+        <br><img src="lapin.png" class="lapin"><h6><span class="timer-lapin">60</span>s</h6>
+        <button onclick="nourirLapin()">Nourir le lapin pour 2 carottes</button>
+        <br><button onclick="vendrePateLapin()">Vendre le paté</button>
+        <button><details>20 pièces unité
+        <summary>Détails de la vente:</summary></details></button>
+        <br><img src="poule.png" class="poule"><h6><span class="timer-poule">75</span>s</h6>
+        <button onclick="nourrirPoule()">Nourir la poule pour 2 graines</button>
+        <br><button onclick="vendreOeuf()">Vendre un oeuf</button>
+        <button><details><summary>Détails de la vente:
+        </summary>20 pièces unité</details></button>
+        <br><img src="cochon.png" class="cochon"><h6><span class="timer-cochon">90</span>s</h6>
+        <button onclick="nourirCochon()">Nourir le cochon pour 2 carottes et 2 blé</button>
+        <br><button onclick="vendreBacon()">Vendre le bacon</button>
+        <button><details>Pour 35 pièces
+        <summary>Détails de la vente</summary></details></button>
+        <br><img src="ble.png" class="farine"><h6><span class="timer-farine">90</span>s</h6>
+        <button onclick="fabriquerFarine()">Produire de la farine pour deux blé</button>
+        <br><button onclick="vendreFarine()">Vendre la farine</button>
+        <button><details><summary>Détails de la vente
+        </summary>30 pièces unité</details></button>
+    </div>
+    <div class="droite">
+        <button onclick="sauvegarder()">Sauvegarder la partie</button>
+        <br><button onclick="restaurer()" class='bouton-charger-partie'>Charger la sauvegarde</button>
+        <br><button onclick="supprimer()" class="bouton-suprimer">Suprimer la sauvegarde</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

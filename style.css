@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: 'Quicksand';
+    font-weight: 525;
+    font-size: 80%;
+    margin: 0;
+    padding: 0;
+    background-color: #5e5e5e;
+    width: 97vw;
+    height: 100vh;
+    user-select: onne;
+}
+
+.image-piece, .image-carotte, .image-ble, .image-lait, .image-pateLapin,
+ .image-bacon, .image-farine, .image-graine, .image-oeuf {
+    width: 20px;
+}
+
+.pieces, .carottes, .ble, .lait, .bacon, .farine, .oeuf, .graine, p {
+    font-size: 20px;
+}
+
+button {
+    height: 50px;
+    background: linear-gradient(to top, red, blue);
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: 0.7s;
+    margin: 2px;
+}
+
+button:hover {
+    opacity: 0.8;
+    border: 3px groove;
+    transition: 0.7s;
+    transform: scale(1.05);
+}
+
+img {
+    display: inline;
+}
+
+button:active {
+    border: 2px dashed;
+    opacity: 1.2;
+    background: linear-gradient(to bottom, red, blue);
+    transform: scale(1.1);
+}
+
+.gauche {
+    position: relative;
+    left: 15px;
+    top: 0;
+}
+
+.droite {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.vache {
+    background-image: url('terre.png');
+    background-size: 55px 55px;
+}
+
+.lapin {
+    background-image: url('terre.png');
+    background-size: 55px 55px;
+    width: 55px;
+}
+
+.cochon {
+    background-image: url('terre.png');
+    background-size: 55px 55px;
+    width: 55px;
+}
+
+.farine {
+    background-image: url('terre.png');
+    background-size: 55px 55px;
+    width: 55px;
+    height: 55px;
+}
+
+.poule {
+    background-image: url('terre.png');
+    background-size: 55px 55px;
+    width: 55px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h6 {
+    display: inline;
+    margin-left: 5px;
+    font-size: 120%;
+}
